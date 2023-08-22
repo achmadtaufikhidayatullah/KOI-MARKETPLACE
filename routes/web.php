@@ -15,9 +15,11 @@ use App\Http\Controllers\Api\KoiApiController;
 |
 */
 
-Route::get('/', function () {
-    return redirect()->route('marketplace.index');
-});
+// Route::get('/', function () {
+//     return redirect()->route('marketplace.index');
+// });
+
+Route::get('/' , [KoiController::class, 'index'])->name('home');
 
 Route::resource('marketplace', KoiController::class);
 Route::get('regist-store' , [KoiController::class, 'registForm'])->name('regist.form');
