@@ -166,14 +166,10 @@
                         <div class="separator-large"></div>
                         <!-- end separator -->
 
-                        @php
-                          $url = 'https://www.instagram.com/komunitasorganikindonesia/?hl=en';
-                        @endphp
-
                         <!-- promo banner -->
                         <div class="promo-banner">
                             <div class="container">
-                                <a href="https://www.instagram.com/komunitasorganikindonesia/?hl=en" target="_blank">
+                                <a href="https://www.instagram.com/komunitasorganikindonesia/?hl=en" onclick="openLink('www.instagram.com/komunitasorganikindonesia/?hl=en')">
                                     <div class="content-box">
                                         <div class="content color-white content-left">
                                             <h5 class="title-item color-white">Komunitas Organik Indonesia</h5>
