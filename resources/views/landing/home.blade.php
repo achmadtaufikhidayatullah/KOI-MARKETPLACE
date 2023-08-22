@@ -173,7 +173,7 @@
                         <!-- promo banner -->
                         <div class="promo-banner">
                             <div class="container">
-                                <a href="https://www.instagram.com/komunitasorganikindonesia/?hl=en" onclick="openLink('{{ $url }}')">
+                                <a href="https://www.instagram.com/komunitasorganikindonesia/?hl=en" target="_blank">
                                     <div class="content-box">
                                         <div class="content color-white content-left">
                                             <h5 class="title-item color-white">Komunitas Organik Indonesia</h5>
