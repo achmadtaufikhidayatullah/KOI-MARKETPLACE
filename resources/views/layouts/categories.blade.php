@@ -7,29 +7,38 @@
             <div class="col-33">
                 <a href="/food/" data-transition="f7-dive">
                     <div class="content">
-                        <ion-icon name="fast-food-outline" class="color-blue"></ion-icon>
-                        <h6 class="second-title">Makanan</h6>
+                        {{-- <ion-icon name="leaf-outline" class="color-blue"></ion-icon> --}}
+                        <div>
+                          <img src="{{ asset('images/icon/organic.png') }}" alt="" style="max-width: 50px;margin: auto;">
+                        </div>
+                        <h6 class="second-title">Organic</h6>
                     </div>
                 </a>
             </div>
             <div class="col-33">
                 <a href="/fashion/" data-transition="f7-dive">
                     <div class="content">
-                        <ion-icon name="glasses-outline" class="color-purple"></ion-icon>
-                        <h6 class="second-title">Fashion</h6>
+                        {{-- <ion-icon name="glasses-outline" class="color-purple"></ion-icon> --}}
+                        <div>
+                          <img src="{{ asset('images/icon/planet-earth.png') }}" alt="" style="max-width: 50px;margin: auto;">
+                        </div>
+                        <h6 class="second-title">Green</h6>
                     </div>
                 </a>
             </div>
             <div class="col-33">
                 <a href="/lifestyle/" data-transition="f7-dive">
                     <div class="content">
-                        <ion-icon name="bicycle-outline" class="color-orange"></ion-icon>
-                        <h6 class="second-title">Lifestyle</h6>
+                        {{-- <ion-icon name="bicycle-outline" class="color-orange"></ion-icon> --}}
+                        <div>
+                          <img src="{{ asset('images/icon/heartbeat.png') }}" alt="" style="max-width: 50px;margin: auto;">
+                        </div>
+                        <h6 class="second-title">Healty</h6>
                     </div>
                 </a>
             </div>
         </div>
-        <div class="row">
+        {{-- <div class="row">
             <div class="col-33">
                 <a href="/elektronik/" data-transition="f7-dive">
                     <div class="content">
@@ -54,6 +63,6 @@
                     </div>
                 </a>
             </div>
-        </div>
+        </div> --}}
     </div>
 </div>
