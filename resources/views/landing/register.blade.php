@@ -147,8 +147,8 @@
                                 action="{{ route('regist.post') }}" method="POST">
                                 @csrf
                                 <input type="hidden" name="accountType" value="RESELLER" readonly>
-                                <input type="hidden" name="store_reference" value="4" readonly>
-                                <input type="hidden" name="plan" value="1" readonly>
+                                <input type="hidden" name="store_reference" value="26572" readonly>
+                                <input type="hidden" name="plan" value="4" readonly>
                                 <div class="col-12">
                                     <div class="input-group shadow rounded-pill">
                                         {{-- <div class="input-group-text" style="border-radius: 20px 0px 0px 20px;">@</div> --}}
