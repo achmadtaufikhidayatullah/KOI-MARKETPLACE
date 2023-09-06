@@ -39,7 +39,7 @@ class KoiController extends Controller
     {
         // dd($request->all());
         // $apiUrl = 'https://demo.staging.resellr.id/api/register-reseller-api';
-        $apiUrl = 'https://selarasalam.resellr.id/api/register-reseller-api';
+        $apiUrl = 'https://app.resellr.id/api/register-reseller-api';
 
         // setup no_telp by rule
         if(!preg_match("/[^+0-9]/",trim($request->phone))){
@@ -66,7 +66,7 @@ class KoiController extends Controller
 
         $responseData = json_decode($response , true);
 
-        // dd($responseData['status'] != 200);
+        // dd($responseData);
 
         if($responseData['status'] == 500){
           return redirect()->back()->with('alert_success' , 'Terdapat kesalahan, silahkan coba kembali!');
