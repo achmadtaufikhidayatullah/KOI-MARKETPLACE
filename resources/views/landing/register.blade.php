@@ -62,8 +62,8 @@
                             @csrf
                             <input type="hidden" name="accountType" value="RESELLER_OFFLINE" readonly>
                             <input type="hidden" name="store_reference" value="26572" readonly>
-                            <input type="hidden" name="plan" value="1" readonly>
-                            {{-- <input type="hidden" name="storeType" value="1" readonly> --}}
+                            <input type="hidden" name="plan" value="25" readonly>
+                            <input type="hidden" name="storeType" value="0" readonly>
                             <div class="col-12">
                                 <div class="input-group shadow rounded-pill">
                                     {{-- <div class="input-group-text" style="border-radius: 20px 0px 0px 20px;">@</div> --}}
@@ -146,10 +146,10 @@
                             <form class="row row-cols-lg-auto g-3 align-items-center mt-4"
                                 action="{{ route('regist.post') }}" method="POST">
                                 @csrf
-                                <input type="hidden" name="accountType" value="RESELLER" readonly>
+                                <input type="hidden" name="accountType" value="RESELLER_OFFLINE" readonly>
                                 <input type="hidden" name="store_reference" value="26572" readonly>
-                                <input type="hidden" name="plan" value="4" readonly>
-                                <input type="hidden" name="storeType" value="1" readonly>
+                                <input type="hidden" name="plan" value="25" readonly>
+                                <input type="hidden" name="storeType" value="0" readonly>
                                 <div class="col-12">
                                     <div class="input-group shadow rounded-pill">
                                         {{-- <div class="input-group-text" style="border-radius: 20px 0px 0px 20px;">@</div> --}}
