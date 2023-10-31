@@ -9,7 +9,7 @@
     <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
 
     {{-- <link rel="icon" href="images/favicon.png"> --}}
-    <link rel="icon" href="{{asset('images/logo/logo-koi.png')}}">
+    <link rel="icon" href="{{asset('images/logo/tethumbasan-logo.png')}}">
 
     <link
         href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800;900&amp;family=Montserrat:wght@300;400;500;600;700;800;900&amp;display=swap"

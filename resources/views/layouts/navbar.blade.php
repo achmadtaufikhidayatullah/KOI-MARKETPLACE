@@ -7,6 +7,6 @@
             </a>
         </div>
         {{-- <img src="{{asset('denfest-asset/img/denfest.png')}}" style="width: 28%"> --}}
-        <img src="{{asset('images/logo/logo-koi.png')}}" style="width: 15%">
+        <img src="{{asset('images/logo/tethumbasan-logo.png')}}" style="width: 13%">
     </div>
 </div>
