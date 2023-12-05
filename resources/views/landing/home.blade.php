@@ -39,6 +39,10 @@
             display: none;
         }
 
+        #image-wrapper{
+            height: 150px;
+        }
+
     </style>
 </head>
 
@@ -174,7 +178,7 @@
                                         <div class="content color-white content-left">
                                             <h5 class="title-item color-white">Komunitas Organik Indonesia</h5>
                                             <p class="text-small">
-                                                Melayani para pecinta organik Indonesia di seluruh Indonesia
+                                                Wadah bagi Produsen, Artisan, Pengusaha UMKM - Penggiat OGH untuk berkumpul dan berbagi pengalaman.
                                             </p>
                                         </div>
                                         <div class="content content-right">

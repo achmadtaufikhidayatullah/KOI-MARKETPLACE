@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row">
             <div class="col-33">
-                <a href="/food/" data-transition="f7-dive">
+                <a href="/organic/" data-transition="f7-dive">
                     <div class="content">
                         {{-- <ion-icon name="leaf-outline" class="color-blue"></ion-icon> --}}
                         <div>
@@ -16,7 +16,7 @@
                 </a>
             </div>
             <div class="col-33">
-                <a href="/fashion/" data-transition="f7-dive">
+                <a href="/Green/" data-transition="f7-dive">
                     <div class="content">
                         {{-- <ion-icon name="glasses-outline" class="color-purple"></ion-icon> --}}
                         <div>
@@ -27,7 +27,7 @@
                 </a>
             </div>
             <div class="col-33">
-                <a href="/lifestyle/" data-transition="f7-dive">
+                <a href="/healty/" data-transition="f7-dive">
                     <div class="content">
                         {{-- <ion-icon name="bicycle-outline" class="color-orange"></ion-icon> --}}
                         <div>

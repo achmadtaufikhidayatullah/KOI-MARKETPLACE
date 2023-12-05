@@ -34,3 +34,4 @@ Route::get('productbycat' , [KoiController::class, 'ProductByCat'])->name('produ
 Route::get('ajax/koi/terlaris' , [KoiApiController::class, 'terlaris'])->name('resellr.terlaris');
 Route::get('ajax/koi/terbaru' , [KoiApiController::class, 'terbaru'])->name('resellr.terbaru');
 Route::get('ajax/resellr/category', [KoiApiController::class, 'category']);
+Route::get('ajax/resellr/allproduct', [KoiApiController::class, 'allproduk'])->name('allproduct');

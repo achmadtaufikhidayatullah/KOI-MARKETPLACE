@@ -51,15 +51,15 @@ var routes = [
   },
 
   {
-    path: '/food/',
+    path: '/organic/',
     url: '/productbycat',
     on: {
       pageInit: function (e, page) {
         
-          $('#judulnya').html('Kategori : Makanan');
+          $('#judulnya').html('Kategori : Organic');
           $.ajax({
             type: 'GET',
-            url: '/ajax/resellr/category?id=6&page=1',
+            url: '/ajax/resellr/category?id=12&page=1',
             dataType: 'json',
             success: function (result) {
                 console.log(result);
@@ -73,7 +73,7 @@ var routes = [
                                 '</a>'+
                                 '<a href="#" onclick="openLink(\''+item.link+'\')">'+
                                     // '<img class="full-width radius-top-only" src="'+item.image[0].link+'" alt="">'+
-                                    '<div style="position: relative !important;">'+
+                                    '<div style="position: relative !important;" id="image-wrapper">'+
                                       '<img src="'+item.image[0].link+'" class="full-width radius-top-only" alt="" style="position: absolute !important;height:100% !important">'+
                                       '<img src="/images/400px.jpg" style="width: 100%;" >'+
                                     '</div>'+
@@ -99,15 +99,15 @@ var routes = [
   },
 
   {
-    path: '/fashion/',
+    path: '/green/',
     url: '/productbycat',
     on: {
       pageInit: function (e, page) {
         
-          $('#judulnya').html('Kategori : Fashion');
+          $('#judulnya').html('Kategori : Green');
           $.ajax({
             type: 'GET',
-            url: '/ajax/resellr/category?id=1&page=1',
+            url: '/ajax/resellr/category?id=11&page=1',
             dataType: 'json',
             success: function (result) {
                 console.log(result);
@@ -121,7 +121,7 @@ var routes = [
                                 '</a>'+
                                 '<a href="#" onclick="openLink(\''+item.link+'\')">'+
                                     // '<img class="full-width radius-top-only" src="'+item.image[0].link+'" alt="">'+
-                                    '<div style="position: relative !important;">'+
+                                    '<div style="position: relative !important;" id="image-wrapper">'+
                                       '<img src="'+item.image[0].link+'" class="full-width radius-top-only" alt="" style="position: absolute !important;height:100% !important">'+
                                       '<img src="/images/400px.jpg" style="width: 100%;" >'+
                                     '</div>'+
@@ -147,15 +147,15 @@ var routes = [
   },
 
   {
-    path: '/lifestyle/',
+    path: '/healty/',
     url: '/productbycat',
     on: {
       pageInit: function (e, page) {
         
-          $('#judulnya').html('Kategori : Lifestyle');
+          $('#judulnya').html('Kategori : Healty');
           $.ajax({
             type: 'GET',
-            url: '/ajax/resellr/category?id=3&page=1',
+            url: '/ajax/resellr/category?id=13&page=1',
             dataType: 'json',
             success: function (result) {
                 console.log(result);
@@ -168,7 +168,11 @@ var routes = [
                                     '<div class="favorite-symbol"><ion-icon name="heart-outline"></ion-icon></div>'+
                                 '</a>'+
                                 '<a href="#" onclick="openLink(\''+item.link+'\')">'+
-                                    '<img class="full-width radius-top-only" src="'+item.image[0].link+'" alt="">'+
+                                    // '<img class="full-width radius-top-only" src="'+item.image[0].link+'" alt="">'+
+                                    '<div style="position: relative !important;" id="image-wrapper">'+
+                                      '<img src="'+item.image[0].link+'" class="full-width radius-top-only" alt="" style="position: absolute !important;height:100% !important">'+
+                                      '<img src="/images/400px.jpg" style="width: 100%;" >'+
+                                    '</div>'+
                                     '<div class="text-desc">'+
                                         '<p class="title-item">'+item.name+'</p>'+
                                         '<p class="price-item">Rp '+rupiah(item.price)+'</p>'+
@@ -310,7 +314,7 @@ var routes = [
                                 '</a>'+
                                 '<a href="#" onclick="openLink(\''+item.link+'\')">'+
                                     // '<img class="full-width radius-top-only" src="'+item.image[0].link+'" alt="">'+
-                                    '<div style="position: relative !important;">'+
+                                    '<div style="position: relative !important;" id="image-wrapper">'+
                                       '<img src="'+item.image[0].link+'" class="full-width radius-top-only" alt="" style="position: absolute !important;height:100% !important">'+
                                       '<img src="/images/400px.jpg" style="width: 100%;" >'+
                                     '</div>'+

@@ -10,7 +10,7 @@ class KoiApiController extends Controller
 {
     public function terlaris()
     {
-        $response = Http::get('https://app.resellr.id/api/market/2/product?filter_terlaris=true&limit=5');
+        $response = Http::get('https://app.resellr.id/api/market/7/product?filter_terlaris=true&limit=5');
 
         return response()->json(json_decode($response));
     }
@@ -18,49 +18,50 @@ class KoiApiController extends Controller
     public function terbaru(Request $request)
     {
 
-        $response = Http::get('https://app.resellr.id/api/market/2/product?random=1&limit=10');
+        $response = Http::get('https://app.resellr.id/api/market/7/product?random=1&limit=10');
 
         return response()->json(json_decode($response));
     }
 
-    public function category($id)
+    public function allproduk(Request $request)
+    {
+
+        $response = Http::get('https://app.resellr.id/api/market/7/product?random=1&limit=10');
+
+        return response()->json(json_decode($response));
+    }
+
+    public function category()
     {
         // return redirect()->away('https://dmarket.id');
 
-        switch ($id) {
-            case 1 :
-                $category = 'Fashion Apparel';
-            break;
-            case 2 :
-                $category = 'Printed Matters';
-            break;
-            case 3 :
-                $category = 'Lifestyle Products';
-            break;
-            case 4 :
-                $category = 'Electronics';
-            break;
-            case 5 :
-                $category = 'Others';
-            break;
-            case 6 :
-                $category = 'Foods & Drinks';
-            break;
-            default :
-                $category = 'Terlaris';
-            break;
-        }
+        // switch ($_GET['id']) {
+        //     case 11 :
+        //         $category = 'Green';
+        //     break;
+        //     case 12 :
+        //         $category = 'Organic';
+        //     break;
+        //     case 13 :
+        //         $category = 'Healty';
+        //     break;
+        //         $category = 'Foods & Drinks';
+        //     break;
+        //     default :
+        //         $category = 'Terlaris';
+        //     break;
+        // }
 
-        if($id == 7) {
-            $dataDetail['url'] = 'https://app.resellr.id/api/market/2/product?filter_terlaris=true';
+        if($_GET['id'] == 7) {
+            $url = 'https://app.resellr.id/api/market/7/product?filter_terlaris=true';
         } else {
-            $dataDetail['url'] = 'https://app.resellr.id/api/market/2/product?category=' . $id;
+            $url = 'https://app.resellr.id/api/market/7/product?category=' . $_GET['id'];
         }
 
-        $produks = $this->callAPI($dataDetail)['data'];
-        // dd($produks);
+        $produks = Http::get($url);
+        return($produks);
 
-        return view('landing.food', compact('produks', 'category'));
+        // return view('landing.food', compact('produks'));
 
 
     }
